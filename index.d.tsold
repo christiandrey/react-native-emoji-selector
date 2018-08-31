@@ -1,0 +1,12 @@
+declare module '@christiandrey/react-native-emoji-selector' {
+    export interface IEmojiSelector {
+        onEmojiSelected(emoji: string): void;
+        theme?: string;
+        category?: ".all" | ".history" | ".people" | ".nature" | ".food" | ".activities" | ".places" | ".objects" | ".symbols" | ".flags";
+        showTabs?: boolean;
+        showHistory?: boolean;
+        showSectionTitles?: boolean;
+        columns?: number;
+        placeholder?: string;
+    }
+}
